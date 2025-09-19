@@ -1,0 +1,44 @@
+/* Drawer styles */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -400px; /* Hidden by default */
+  width: 400px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.drawer.open {
+  right: 0; /* Slide in */
+}
+
+.drawer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.open-drawer-btn {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.open-drawer-btn:hover {
+  background: #0056b3;
+}
